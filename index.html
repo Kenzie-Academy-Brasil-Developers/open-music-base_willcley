@@ -4,34 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
     <script src="./src/scripts/theme.js" defer></script>
     <script src="./src/scripts/productsData.js" defer></script>
     <script src="./src/scripts/index.js" defer></script>
   </head>
-  <body>
+  <body class="mode__light">
     <header class="header">
-      <h1>open music</h1>
+      <h1 class="title-1">open music</h1>
       <button class="btn__bgMode">Dark Mode</button>
     </header>
     <main class="main">
       <section class="main__filters">
         <div class="filters__genresButtons">
-          <h2>Gênero Musical</h2>
+          <h2 class="title-2">Gênero Musical</h2>
           <ul class="genresButtons__allButtons"></ul>
         </div>
         <div class="filters__price">
           <div class="price__texts">
-            <h2>Definir Preço</h2>
-            <p>Até R$...</p>
+            <h2 class="title-2">Definir Preço</h2>
+            <p class="text-2">Até R$ ...</p>
           </div>
           <input type="range">
         </div>
       </section>
       <section class="main__cards">
-        <h2>Álbuns Encontrados</h2>
+        <h2 class="title-2">Álbuns Encontrados</h2>
         <ul class="cards__list"></ul>
       </section>
     </main>

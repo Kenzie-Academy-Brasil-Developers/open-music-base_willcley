@@ -13,6 +13,11 @@ const createCard = (product) => {
     title.innerText = product.title;
     price.innerText = product.price;
     buyButton.innerText = 'Comprar';
+
+    info.classList.add('text-3');
+    title.classList.add('title-2');
+    price.classList.add('text-1');
+    buyButton.classList.add('btn__buy');
     
     buy.append(price, buyButton);
     card.append(cover, info, title, buy);
@@ -29,9 +34,28 @@ const renderGenres = (list) => {
 
         button.innerText = element;
 
+        button.classList.add('btn__greylow');
+
+        button.addEventListener('click', () => {
+            const allButtons = document.querySelector('.genresButtons__allButtons').querySelectorAll('button');
+
+            allButtons.forEach((btn) => {
+                btn.classList.remove('btn__greylow--active');
+                btn.classList.add('btn__greylow');
+            });
+
+            button.classList.remove('btn__greylow');
+            button.classList.add('btn__greylow--active');
+        });
+
         buttonContainer.appendChild(button);
         listAllButtons.appendChild(buttonContainer);
     });
+
+    const btnTodos = listAllButtons.querySelector('button');
+
+    btnTodos.classList.remove('btn__greylow');
+    btnTodos.classList.add('btn__greylow--active');
 }
 
 const renderCards = (list) => {

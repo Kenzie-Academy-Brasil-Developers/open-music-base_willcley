@@ -1,1 +1,6 @@
-/* Desenvolva sua estilização aqui ... */
+@import url('./globalStyles.css');
+@import url('./buttons.css');
+
+.cards__list {
+    list-style: none;
+}

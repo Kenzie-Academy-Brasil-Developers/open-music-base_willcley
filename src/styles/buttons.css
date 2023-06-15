@@ -11,22 +11,48 @@ button:hover {
     cursor: pointer;
 }
 
-.mode__light {
-    .btn__greylow {
-        background-color: var(--color-grey-8);
-        color: var(--color-grey-2);
-        border: 1px solid var(--color-grey-8);
-    }
-    
-    .btn__greylow:hover, .btn__greylow--active {
+.btn__mode {
+    background-color: var(--color-grey-8);
+}
+
+.btn__greylow {
+    background-color: var(--color-grey-8);
+    color: var(--color-grey-2);
+    border: 1px solid var(--color-grey-8);
+}
+
+.btn__greylow:hover, .btn__greylow--active {
+    background-color: var(--color-grey-1);
+    color: var(--color-grey-8);
+    border: 1px solid var(--color-grey-1);
+}
+
+.btn__buy {
+    background-color: var(--color-grey-7);
+    color: var(--color-grey-2);
+    border: 1px solid var(--color-grey-7);
+}
+
+body.darkMode {
+    .btn__mode {
         background-color: var(--color-grey-1);
-        color: var(--color-grey-8);
+    }
+
+    .btn__greylow {
+        background-color: var(--color-grey-1);
+        color: var(--color-grey-3);
         border: 1px solid var(--color-grey-1);
     }
 
+    .btn__greylow:hover, .btn__greylow--active {
+        background-color: var(--color-grey-2);
+        color: var(--color-grey-9);
+        border: 1px solid var(--color-grey-9);
+    }
+
     .btn__buy {
-        background-color: var(--color-grey-7);
-        color: var(--color-grey-2);
-        border: 1px solid var(--color-grey-7);
+        background-color: var(--color-grey-2);
+        color: var(--color-grey-5);
+        border: 1px solid var(--color-grey-2);
     }
 }

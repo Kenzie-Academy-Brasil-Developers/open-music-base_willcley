@@ -11,11 +11,14 @@ const createCard = (product) => {
     cover.alt = `Capa do álbum: ${product.title}`;
     info.innerText = `${product.band} ${product.year}`;
     title.innerText = product.title;
-    price.innerText = product.price;
+    price.innerText = `R$ ${product.price.toFixed(2)}`;
     buyButton.innerText = 'Comprar';
 
-    info.classList.add('text-3');
-    title.classList.add('title-2');
+    card.classList.add('card');
+    cover.classList.add('card__img');
+    info.classList.add('text-3', 'card__info');
+    title.classList.add('title-2', 'card__title');
+    buy.classList.add('card__buy');
     price.classList.add('text-1');
     buyButton.classList.add('btn__buy');
     
@@ -61,6 +64,8 @@ const renderGenres = (list) => {
 const renderCards = (list) => {
     const cardsList = document.querySelector('.cards__list');
 
+    cardsList.innerHTML = null;
+    
     list.forEach((product) => {
         const newCard = createCard(product);
         cardsList.appendChild(newCard);
@@ -68,4 +73,4 @@ const renderCards = (list) => {
 }
 
 renderGenres(categories);
-renderCards(products);
+renderCards(filterByCategory(categories, products));

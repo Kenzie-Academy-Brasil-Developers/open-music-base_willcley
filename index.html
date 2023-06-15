@@ -7,13 +7,17 @@
     <link rel="stylesheet" href="./src/styles/index.css" />
     <title>Open Music</title>
     <script src="./src/scripts/theme.js" defer></script>
+    <script src="./src/scripts/inputRange.js" defer></script>
     <script src="./src/scripts/productsData.js" defer></script>
+    <script src="./src/scripts/filters.js" defer></script>
     <script src="./src/scripts/index.js" defer></script>
   </head>
-  <body class="mode__light">
+  <body class="">
     <header class="header">
       <h1 class="title-1">open music</h1>
-      <button class="btn__bgMode">Dark Mode</button>
+      <button class="btn__mode">
+        <img class="mode__icon" src="" alt="">
+      </button>
     </header>
     <main class="main">
       <section class="main__filters">
@@ -24,9 +28,13 @@
         <div class="filters__price">
           <div class="price__texts">
             <h2 class="title-2">Definir Preço</h2>
-            <p class="text-2">Até R$ ...</p>
+            <p class="text-2">Até R$ 100</p>
           </div>
-          <input type="range">
+          <div class="price__inputRange">
+            <div class="progressBarBackground"></div>
+            <div class="progressBar"></div>
+            <input id="rangeInput" type="range" min="0" max="100" step="1" value="100">
+          </div>
         </div>
       </section>
       <section class="main__cards">

@@ -13,34 +13,36 @@
     <script src="./src/scripts/index.js" defer></script>
   </head>
   <body class="">
-    <header class="header">
-      <h1 class="title-1">open music</h1>
-      <button class="btn__mode">
-        <img class="mode__icon" src="" alt="">
-      </button>
-    </header>
-    <main class="main">
-      <section class="main__filters">
-        <div class="filters__genresButtons">
-          <h2 class="title-2">Gênero Musical</h2>
-          <ul class="genresButtons__allButtons"></ul>
-        </div>
-        <div class="filters__price">
-          <div class="price__texts">
-            <h2 class="title-2">Definir Preço</h2>
-            <p class="text-2">Até R$ 100</p>
+    <div class="container">
+      <header class="header">
+        <h1 class="title-1">open music</h1>
+        <button class="btn__mode">
+          <img class="mode__icon" src="" alt="">
+        </button>
+      </header>
+      <main class="main">
+        <section class="main__filters">
+          <div class="filters__genresButtons">
+            <h2 class="title-2">Gênero Musical</h2>
+            <ul class="genresButtons__allButtons"></ul>
           </div>
-          <div class="price__inputRange">
-            <div class="progressBarBackground"></div>
-            <div class="progressBar"></div>
-            <input id="rangeInput" type="range" min="0" max="100" step="1" value="100">
+          <div class="filters__price">
+            <div class="price__texts">
+              <h2 class="title-2">Definir Preço</h2>
+              <p class="text-2">Até R$ 100</p>
+            </div>
+            <div class="price__inputRange">
+              <div class="progressBarBackground"></div>
+              <div class="progressBar"></div>
+              <input id="rangeInput" type="range" min="0" max="100" step="1" value="100">
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="main__cards">
-        <h2 class="title-2">Álbuns Encontrados</h2>
-        <ul class="cards__list"></ul>
-      </section>
+        </section>
+        <section class="main__cards">
+          <h2 class="title-2">Álbuns Encontrados</h2>
+          <ul class="cards__list"></ul>
+        </section>
+    </div>
     </main>
   </body>
 </html>

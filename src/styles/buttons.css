@@ -55,4 +55,10 @@ body.darkMode {
         color: var(--color-grey-5);
         border: 1px solid var(--color-grey-2);
     }
+
+    .btn__buy:hover {
+        background-color: var(--color-grey-1);
+        color: var(--color-grey-9);
+        border: 1px solid var(--color-grey-1);
+    }
 }

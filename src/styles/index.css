@@ -5,11 +5,7 @@
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 4rem 3rem;
-}
-
-.main {
-    margin: 0 3rem;
+    margin: 4rem 0;
 }
 
 .main__filters {
@@ -52,7 +48,7 @@
 .cards__list {
     display: flex;
     flex-wrap: wrap;
-    gap: 5rem;
+    gap: 2rem 3rem;
     list-style: none;
 }
 
@@ -62,6 +58,10 @@
     background-color: var(--color-grey-8);
     width: 280px;
     border-radius: var(--radius-1);
+}
+
+.card:hover {
+    background-color: var(--color-grey-6);
 }
 
 .card__img {
@@ -82,5 +82,9 @@
 body.darkMode {
     .card {
         background-color: var(--color-grey-1);
+    }
+
+    .card:hover {
+        background-color: var(--color-grey-2);
     }
 }
